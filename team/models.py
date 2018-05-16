@@ -15,7 +15,7 @@ class Company_info(models.Model):
     jobcode = models.ForeignKey('Occupation_type',  on_delete=models.CASCADE)
 
     def __str__(self):
-        return '{} {}'.format(self.id, self.company_name)
+        return self.company_name
 
 
 class Company_select(models.Model):
